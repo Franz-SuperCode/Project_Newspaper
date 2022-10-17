@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: cormorant-regular;
+    src: url("../fonts/CormorantGaramond-Regular.ttf");
+}
+
+body {
+    font-family: cormorant-regular;
+    background-color: #E9E9E0;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr 10fr;
+    grid-template-areas:
+        "header header"
+        "main aside";
+}
+
+header {
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: header;
+    margin: 0 2rem;
+}
+
+header section {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    border: double 3px black;
+
+    border-left: none;
+    border-right: none;
+}
+
+main {
+    /* background-color: aqua; */
+    grid-row: 2/3;
+    grid-column: 1/-2;
+    grid-area: main;
+    margin: 0 2rem;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+main div {
+    /* background-color: red; */
+    /* display: flex; */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+main div section {
+    /* background-color: bisque; */
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+    gap: 5rem 2rem;
+}
+
+main div img {
+    grid-column: 2 / 3;
+    width: 100%;
+    margin: 1rem 0;
+
+}
+
+main div figure {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-;
+}
+
+main div section article h3 {
+    font-size: 1.5rem;
+}
+
+aside {
+
+    grid-area: aside;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+
+
+}
+
+.p__you {
+    font-size: 3rem;
+    border: black double 3px;
+    padding: 0.5rem;
+}
+
+aside article {
+    border: black double 3px;
+}
+
+aside img {
+    width: 60%;
+    margin: 2rem 0rem;
+}
+
+aside div {
+    display: inline-block;
+    border: black double 3px;
+    padding: 0.5rem;
+}
