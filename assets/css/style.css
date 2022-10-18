@@ -35,9 +35,12 @@ header section {
     width: 100%;
     justify-content: space-around;
     border: double 3px black;
-
     border-left: none;
     border-right: none;
+}
+
+.monday {
+    margin-left: 3rem;
 }
 
 main {
@@ -89,9 +92,8 @@ main div section article h3 {
 }
 
 aside {
-
     grid-area: aside;
-    margin: 2rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,17 +109,31 @@ aside {
     padding: 0.5rem;
 }
 
-aside article {
+/* aside article {
     border: black double 3px;
-}
+} */
 
 aside img {
-    width: 60%;
-    margin: 2rem 0rem;
+    width: 100%;
 }
 
-aside div {
+aside div,
+aside article {
     display: inline-block;
     border: black double 3px;
-    padding: 0.5rem;
+    padding: 1rem;
+}
+
+.logo {
+    filter: grayscale(100%);
+}
+
+.a_bestKnives {
+    text-underline-offset: 2px;
+    color: grey;
+}
+
+aside article h2,
+aside article p {
+    margin: 0.5rem;
 }
